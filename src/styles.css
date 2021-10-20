@@ -1,0 +1,44 @@
+:root {
+    --main-color: #ffe153;
+    --secondary-color: black;
+
+    --font-black: Montserrat-black, Arial;
+    --font-medium: Montserrat-light, Arial;
+    --font-default: Montserrat, Arial;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    font-family: var(--font-default);
+}
+
+h1 {
+    font-size: 8em;
+    font-weight: 700;
+    font-family: var(--font-black);
+}
+
+h2 {
+    font-size: 4.75em;
+    font-family: var(--font-medium);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 680px) {
+    h1 {
+        font-size: 6rem;
+    }
+}

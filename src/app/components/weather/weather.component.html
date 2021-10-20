@@ -1,0 +1,16 @@
+<div class="weather" *ngIf="size === 'large'; else smallWeather">
+    <h4>{{ data.day }}</h4>
+    <fa-icon [icon]="faCloudShowersHeavy"></fa-icon>
+    <h1>{{ data.temperature }}°</h1>
+</div>
+
+<ng-template #smallWeather>
+    <div
+        class="weather weather-sm"
+        [ngClass]="size === 'large' ? 'weather-lg' : 'weather-sm'"
+    >
+        <h4>{{ this.dayName }}</h4>
+        <fa-icon [icon]="weatherIcon"></fa-icon>
+        <h4>{{ data.temperature }}°</h4>
+    </div>
+</ng-template>

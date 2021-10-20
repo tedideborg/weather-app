@@ -1,0 +1,37 @@
+#city-search {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+}
+
+.city-search-button {
+    padding: 2px 16px;
+    border-radius: 50%;
+    font-size: 2rem;
+    border: 2px solid black;
+    cursor: pointer;
+    margin-bottom: auto;
+}
+
+.sr-only {
+    display: none;
+}
+
+select {
+    font-size: 6rem;
+    font-weight: 700;
+    font-family: var(--font-default);
+    background-color: var(--main-color);
+    text-transform: capitalize;
+    text-align: center;
+}
+
+@media screen and (max-width: 680px) {
+    select {
+        font-size: 4rem;
+    }
+}
